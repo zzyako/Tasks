@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:17'
+    container_name: 'task8_9_10'
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: task_db
+      PGDATA: /var/lib/postgresql/data/pgdata
+
